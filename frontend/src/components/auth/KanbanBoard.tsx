@@ -2,8 +2,10 @@ import { useEffect, useState } from "react";
 import io from "socket.io-client";
 import { DragDropContext, Droppable, Draggable } from "@hello-pangea/dnd";
 import api from "../../api";
+import { baseapi } from "../../api";
 
-const socket = io("http://localhost:8000", { path: "/socket.io" });
+// Ensure baseapi is a string URL, not an Axios instance
+const socket = io(typeof baseapi === "string" ? baseapi : "http://localhost:8000", { path: "/socket.io" });
 
 interface Task {
   _id: string;
