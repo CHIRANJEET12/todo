@@ -13,7 +13,7 @@ A minimal Trello-style Kanban board with real-time collaboration, smart task ass
 
 ## 🚀 Live Demo
 
-🌐 [Live App](https://your-deployment-link.com)  
+🌐 [Live App](https://todo-7u66.onrender.com/)  
 🎥 [Demo Video](https://your-demo-video-link.com)
 
 ---
