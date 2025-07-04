@@ -5,7 +5,7 @@ import api from "../../api";
 import { baseapi } from "../../api";
 
 // Ensure baseapi is a string URL, not an Axios instance
-const socket = io(typeof baseapi === "string" ? baseapi : "http://localhost:8000", { path: "/socket.io" });
+const socket = io(typeof baseapi === "string" ? baseapi : "https://taskflow-3z4n.onrender.com", { path: "/socket.io" });
 
 interface Task {
   _id: string;
