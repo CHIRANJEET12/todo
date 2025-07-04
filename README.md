@@ -31,8 +31,8 @@ npm install
 
 Create a `.env` file:
 ```
-PORT=8000
-MONGO_URI=mongodb://localhost:27017/collab-todo
+PORT=PORT
+MONGO_URI=YOUR_URL
 JWT_SECRET=yourSecretKey
 ```
 
