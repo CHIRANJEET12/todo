@@ -153,7 +153,7 @@ const Dashboard = () => {
         <div className="flex justify-between items-center mb-6">
           <h2 className="text-2xl font-bold text-neutral-800">Your Workspaces</h2>
           <Link
-            to="/create-workspace"
+            to="/createworkspace"
             className="text-sm px-4 py-2 bg-orange-500 text-white rounded-lg hover:bg-orange-600 transition-colors flex items-center gap-1"
           >
             <svg xmlns="http://www.w3.org/2000/svg" className="h-4 w-4" viewBox="0 0 20 20" fill="currentColor">
