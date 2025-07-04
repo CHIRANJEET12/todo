@@ -17,6 +17,7 @@ const io = new Server(server,{
 })
 app.use(cors({
   origin: "https://todo-7u66.onrender.com/",
+  
 }));
 app.use(express.json());
 
