@@ -1,7 +1,7 @@
 import axios from "axios";
 
-const BASE_URL = "http://localhost:8000/api/auth";
-const BASE_URLL = "http://localhost:8000";
+const BASE_URL = "https://taskflow-3z4n.onrender.com/api/auth";
+const BASE_URLL = "https://taskflow-3z4n.onrender.com";
 
 const api = axios.create({
   baseURL: BASE_URL,
