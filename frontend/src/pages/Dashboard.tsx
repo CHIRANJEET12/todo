@@ -16,6 +16,16 @@ const Dashboard = () => {
   const data = JSON.parse(localStorage.getItem("data") || "{}");
   const userdata = data.user?.username || "Guest";
   const userId = data.user?.id || '';
+  const [joinCode, setJoinCode] = useState("");
+  
+  const handleJoinWorkspace = () => {
+    if (/^\d{6}$/.test(joinCode)) {
+      window.location.href = `/viewworkspace/${joinCode}`;
+    } else {
+      alert("Please enter a valid 6-digit numeric code.");
+    }
+  };
+
 
   const fetchWorkspaces = async () => {
     try {
@@ -162,6 +172,27 @@ const Dashboard = () => {
             New Workspace
           </Link>
         </div>
+
+        <div className="bg-white p-6 rounded-xl shadow-sm border border-neutral-100 mb-8">
+          <h2 className="text-xl font-semibold text-neutral-800 mb-4">Join Workspace</h2>
+          <div className="flex flex-col sm:flex-row items-center gap-4">
+            <input
+              type="text"
+              maxLength={6}
+              placeholder="Enter 6-digit code"
+              value={joinCode}
+              onChange={(e) => setJoinCode(e.target.value)}
+              className="w-full sm:w-1/3 px-4 py-2 border border-orange-300 rounded-md focus:outline-none focus:ring-2 focus:ring-orange-400"
+            />
+            <button
+              onClick={handleJoinWorkspace}
+              className="bg-orange-500 hover:bg-orange-600 text-white px-6 py-2 rounded-md transition"
+            >
+              Join Workspace
+            </button>
+          </div>
+        </div>
+
 
         {loadingWorkspaces ? (
           <div className="flex justify-center py-8">
