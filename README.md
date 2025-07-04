@@ -14,7 +14,7 @@ A minimal Trello-style Kanban board with real-time collaboration, smart task ass
 ## 🚀 Live Demo
 
 🌐 [Live App](https://todo-7u66.onrender.com/)  
-🎥 [Demo Video](https://your-demo-video-link.com)
+🎥 [Demo Video](https://drive.google.com/file/d/1XyddzKVupM9cxccx3rsMZnsfCL4u5EeZ/view?usp=drive_link)
 
 ---
 
@@ -97,7 +97,3 @@ Visit: http://localhost:5173
 
 ---
 
-✅ Just replace:
-- `https://your-deployment-link.com` with your Render/Vercel/Netlify URL
-- `https://your-demo-video-link.com` with your Loom/YouTube link
-- Add your real GitHub repo if needed
